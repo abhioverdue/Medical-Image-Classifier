@@ -38,13 +38,6 @@ Medical-Image-Classification/
 ├── notebooks/
 │   └── medical_classification.ipynb    # Main Jupyter notebook
 │
-├── src/
-│   ├── data_loader.py                  # Dataset loading and preprocessing
-│   ├── model.py                        # ResNet18 model architecture
-│   ├── train.py                        # Training loop with validation
-│   ├── evaluate.py                     # Evaluation metrics and analysis
-│   └── utils.py                        # Utility functions and visualizations
-│
 ├── requirements.txt                    # Python dependencies
 ├── README.md                          # Project documentation
 └── .gitignore                         # Git ignore rules
@@ -113,8 +106,8 @@ python src/evaluate.py --model-path checkpoints/best_model.pth
 
 | Parameter | Default | Description |
 |-----------|---------|-------------|
-| `--epochs` | 50 | Number of training epochs |
-| `--batch-size` | 32 | Training batch size |
+| `--epochs` | 20 | Number of training epochs |
+| `--batch-size` | 16 | Training batch size |
 | `--learning-rate` | 0.001 | Initial learning rate |
 | `--weight-decay` | 1e-4 | L2 regularization strength |
 | `--early-stopping` | 10 | Early stopping patience |
@@ -208,3 +201,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 **Made for advancing medical AI research**
+
